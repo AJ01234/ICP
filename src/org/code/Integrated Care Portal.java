@@ -23,7 +23,7 @@ import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
 
-public class HospitalManagement {
+public class ICP {
 
 	private JFrame frame;
 	private JTextField patientnameField;
@@ -55,7 +55,7 @@ public class HospitalManagement {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					HospitalManagement window = new HospitalManagement();
+					ICP window = new ICP();
 					window.frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -67,7 +67,7 @@ public class HospitalManagement {
 	/**
 	 * Create the application.
 	 */
-	public HospitalManagement() {
+	public ICP() {
 		Database.dbInit();
 		initialize();
 	}
